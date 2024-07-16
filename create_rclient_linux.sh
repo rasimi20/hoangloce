@@ -71,6 +71,10 @@ fi
 # Step 6: Run rivalz run with expect script
 echo -e "${GREEN}Running rivalz run...${NC}"
 
+# Update Rivalz
+rivalz update-version
+sleep 20
+
 expect << EOF
 spawn rivalz run
 expect "Your wallet address:" 
