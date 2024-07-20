@@ -88,7 +88,7 @@ send "HDD\r"
 expect "Select disk serial number:" 
 send "\r"
 expect "Enter disk size you want to allow the client to use:" 
-send "100\r"
+send "200\r"
 expect eof
 EOF
 
@@ -131,7 +131,7 @@ hash_value="CDDA3E4A-7D0F-4985-AAFF-8B5659ADB018"
 
 cpu_core=1
 memory_size=4
-storage_size=80
+storage_size=50
 
 service_content="
 [Unit]
